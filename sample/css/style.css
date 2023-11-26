@@ -23,7 +23,6 @@ body{
 }
 
 html {
-   /* font-size: 62.5%; */
    overflow-x: hidden;
    scroll-behavior: smooth;
    scroll-padding-top: 5rem;
@@ -137,10 +136,19 @@ html {
    color: var(--color-black-text);
 }
 
+.sub-navbar #alamat #maps,
+.sub-navbar #email #address,
 .sub-navbar #phone #number{
+  margin-left: 6px;
   font-weight: bold;
 }
+.sub-navbar #alamat #maps{
+  font-weight: 500;
+  font-size: 0.8rem;
+}
 
+.sub-navbar #alamat #maps:hover,
+.sub-navbar #email #address:hover,
 .sub-navbar #phone #number:hover{
    color: rgba(0, 0, 0, 0.438);
 }
@@ -201,11 +209,42 @@ html {
 
 .navbar .link a{
    margin: 0px 30px;
-  font-size: 1.1em;
+   font-size: 1.1em;
    color: var(--color-black-text);
 }
 
-.navbar .link a:hover{
+.navbar .dropdown #bar {   /* #REVIEW  Responsive bar  */
+  font-size: 2.5rem;
+  cursor: pointer;
+
+  display: none;          /* #REVIEW  hide the bar  */
+}
+
+.container-navbar .dropdown-menu{
+  padding: 1rem 4rem;
+  position: absolute;
+  right: 8%;
+  border-radius: 20px 0 20px 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--color-white-navbar-trans);
+  backdrop-filter: blur(8px);
+  overflow: hidden;
+
+  display: none;         /* #REVIEW  hide the dropdown menu  */
+}
+
+.container-navbar .dropdown-menu a{
+  padding: .5rem 0;
+  font-size: 1.1em;
+  color: var(--color-black-text);
+}
+
+
+.navbar .link a:hover,
+.navbar .dropdown #bar:hover{
   color: var(--color-green-main);
 }
 /* -------------------HEADER NAVBAR End */
@@ -288,16 +327,16 @@ html {
 
 
 
-.blogs {
+.destinasi {
    background-color: var(--color-soft-blue-bg);
  }
  
- .blogs .slide {
+ .destinasi .slide {
    text-align: center;
    padding: 2rem;
  }
  
- .blogs .slide img {
+ .destinasi .slide img {
    height: 15rem;
    width: 100%;
    -o-object-fit: cover;
@@ -305,7 +344,7 @@ html {
    border-radius: .5rem;
  }
  
- .blogs .slide .icons {
+ .destinasi .slide .icons {
    background: #10221b;
    border-radius: .5rem;
    padding: 1rem;
@@ -314,27 +353,27 @@ html {
    display: inline-block;
  }
  
- .blogs .slide .icons a {
+ .destinasi .slide .icons a {
    font-size: 1rem;
    color: var(--color-white-bg);
    margin: 0 1rem;
  }
  
- .blogs .slide .icons a:hover {
+ .destinasi .slide .icons a:hover {
    color: #219150;
  }
  
- .blogs .slide .icons a i {
+ .destinasi .slide .icons a i {
    padding-right: .5rem;
    color: #219150;
  }
  
- .blogs .slide h3 {
+ .destinasi .slide h3 {
    font-size: 1rem;
    color: #10221b;
  }
  
- .blogs .slide p {
+ .destinasi .slide p {
    font-size: 0.8rem;
    padding: 1rem 0;
    line-height: 2;

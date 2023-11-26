@@ -37,11 +37,6 @@
    <link rel="stylesheet" href="./css/style.css">
 
 
-   <!-- Home section google font link -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
 
 </head>
 <body>
@@ -50,14 +45,16 @@
 
       <nav class="sub-navbar">
          <div class="link">
-            <a href="#" id="beranda">Beranda</a>
+            <a href="./index.html" id="email"> <i class="fa-solid fa-house"></i> <i id="address"> Beranda</i> </a>
             <span class="separator"><i class="fa-solid fa-grip-lines-vertical"></i></span> 
-            <a href="#" id="phone"><i class="fa-solid fa-phone"></i> <i id="number">0729 7330 319</i></a> <!-- #review  tambah link telp -->
-         </div>
+            <a href="#kontak" id="phone"><i class="fa-solid fa-phone"></i> <i id="number">Kontak</i></a> <!-- #review  tambah link telp -->
+            <span class="separator"><i class="fa-solid fa-grip-lines-vertical"></i></span> 
+            <a href="#lokasi" id="alamat"><i class="fa-solid fa-map-location-dot"></i> <i id="maps"S>Jln. Cendrawasih No. 1 Pajaresuk, Kec. Pringsewu, Kab. Pringsewu, Lampung</i> </a>
+          </div>
       </nav>
    
       <nav class="navbar">
-         <a href="#" class="logo"> 
+         <a href="./index.html" class="logo"> 
             <img class="logo-img" id="logo-img" src="./images/icon.png"></img>
    
             <div class="logo-title">
@@ -67,11 +64,25 @@
          </a>
          
          <div class="link">
-            <a href="#home">Home</a>
-            <a href="#destinasi">Destinasi</a>
+            <a href="./index.html">Home</a>
+            <a href="./page/destinasi.html">Destinasi</a>
+            <a href="#kuliner">Kuliner</a>
             <a href="#kontak">Kontak</a>
          </div>
+
+         <div class="dropdown">                <!-- #REVIEW  responsive button -->
+            <i class="fa-solid fa-bars" id="bar"></i>
+
+         </div>
       </nav>
+
+      <nav class="dropdown-menu">             <!-- #REVIEW  responsive menu -->
+        <a href="./index.html">Home</a>
+        <a href="./page/destinasi.html">Destinasi</a>
+        <a href="#kuliner">Kuliner</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+
    </header>
 
 
@@ -83,7 +94,7 @@
           <div class="swiper-wrapper">
                                                                             
               <div class="swiper-slide">
-                  <div class="box second" style="background: linear-gradient(360deg,rgb(1, 19, 1), rgba(248, 248, 248, 0)), url(./images/Tanggul-Air.webp) center/cover no-repeat;"> 
+                  <div class="box second" style="background: linear-gradient(360deg,rgb(1, 19, 1), rgba(248, 248, 248, 0)), url(./images/Goa-Maria.jpg) center/cover no-repeat;"> 
                     <div class="content">
                           <span>#Visit</span>
                           <h3>Sri Lanka</h3>
@@ -94,7 +105,7 @@
               </div>
   
               <div class="swiper-slide">
-                  <div class="box second" style="background: linear-gradient(360deg,rgb(1, 19, 1), rgba(248, 248, 248, 0)), url(./images/Talang-Indah.webp) center/cover no-repeat;" >
+                  <div class="box second" style="background: linear-gradient(360deg,rgb(1, 19, 1), rgba(248, 248, 248, 0)), url(./images/La-verna-salib.jpg) center/cover no-repeat;" >
                       <div class="content">
                           <span>Welcome to</span>
                           <h3>Paradise</h3>
@@ -105,7 +116,7 @@
               </div>
   
               <div class="swiper-slide">
-                  <div class="box second" style="background: linear-gradient(360deg,rgb(1, 19, 1), rgba(248, 248, 248, 0)), url(./images/La-Verna.webp) center/cover no-repeat;" >
+                  <div class="box second" style="background: linear-gradient(360deg,rgb(1, 19, 1), rgba(248, 248, 248, 0)), url(./images/Talang.jpg) center/cover no-repeat;" >
                       <div class="content">
                           <span>Explore the</span>
                           <h3>Island</h3>
@@ -116,7 +127,7 @@
               </div>
   
               <div class="swiper-slide">
-                <div class="box second" style="background: linear-gradient(360deg,rgb(1, 19, 1), rgba(248, 248, 248, 0)), url(./images/Bukit-Pangonan.webp) center/cover no-repeat;">
+                <div class="box second" style="background: linear-gradient(360deg,rgb(1, 19, 1), rgba(248, 248, 248, 0)), url(./images/Goa-Maria-3.jpg) center/cover no-repeat;">
                     <div class="content">
                         <span>Wonder of</span>
                         <h3>Asia</h3>
@@ -140,26 +151,26 @@
 
 
 
-  <section class="blogs">
+  <section class="destinasi">
 
    <h1 class="heading"> Destinasi Wisata </h1>
 
-   <div class="swiper blogs-slider">
+   <div class="swiper destinasi-slider">
 
        <div class="swiper-wrapper">
 
            <div class="swiper-slide slide">
-               <img src="./images/GOA-MARIA.webp" alt="Foto Destinasi" loading="lazy">
+               <img src="./images/destinasi/goa-maria.jpg" alt="Foto Destinasi" loading="lazy">
                <div class="icons">
                    <a href="#"> <i class="fas fa-calendar"></i> 25th Dec, 2022 </a>
                </div>
                <h3>Lotus Tower</h3>
                <p>Lotus Tower also referred to as Colombo Lotus Tower, is a 350 m (1,150 ft) tall tower...</p>
-               <a href="blogs.html#lotus" class="btn">Kunjungi</a>
+               <a href="destinasi.html#lotus" class="btn">Kunjungi</a>
            </div>
 
            <div class="swiper-slide slide">
-               <img src="./images/GOA-MARIA.webp" alt="Foto Destinasi" loading="lazy">
+               <img src="./images/destinasi/la-verna.jpg" alt="Foto Destinasi" loading="lazy">
                <div class="icons">
                    <a href="#"> <i class="fas fa-calendar"></i> 25th Dec, 2022 </a> 
                </div>
@@ -169,7 +180,7 @@
            </div>
 
            <div class="swiper-slide slide">
-               <img src="./images/GOA-MARIA.webp" alt="Foto Destinasi" loading="lazy">
+               <img src="./images/destinasi/talang.jpg" alt="Foto Destinasi" loading="lazy">
                <div class="icons">
                    <a href="#"> <i class="fas fa-calendar"></i> 25th Dec, 2022 </a>
                </div>
@@ -179,7 +190,7 @@
            </div>
 
            <div class="swiper-slide slide">
-               <img src="./images/GOA-MARIA.webp" alt="Foto Destinasi" loading="lazy">
+               <img src="./images/destinasi/goa-maria.jpg" alt="Foto Destinasi" loading="lazy">
                <div class="icons">
                    <a href="#"> <i class="fas fa-calendar"></i> 25th Dec, 2022 </a>
                </div>
@@ -189,7 +200,7 @@
            </div>
 
            <div class="swiper-slide slide">
-               <img src="./images/GOA-MARIA.webp" alt="Foto Destinasi" loading="lazy">
+               <img src="./images/destinasi/la-verna.jpg" alt="Foto Destinasi" loading="lazy">
                <div class="icons">
                    <a href="#"> <i class="fas fa-calendar"></i> 25th Dec, 2022 </a>
                </div>
@@ -199,7 +210,7 @@
            </div>
 
            <div class="swiper-slide slide">
-               <img src="./images/GOA-MARIA.webp" alt="Foto Destinasi" loading="lazy">
+               <img src="./images/destinasi/talang.jpg" alt="Foto Destinasi" loading="lazy">
                <div class="icons">
                    <a href="#"> <i class="fas fa-calendar"></i> 25th Dec, 2022 </a>
                </div>
@@ -410,18 +421,27 @@
 
     <div class="box-container">
 
-        <div class="box">
-            <h3>Tambahan</h3>
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
+        <div class="box" id="lokasi">
+            <h3>Lokasi</h3>
+            <a href="https://maps.app.goo.gl/1Uz4CkV7PQtmrWKR8" 
+            target="_blank" 
+            style="font-style: italic;"> <i class="fa-solid fa-location-dot"></i> 
+            Jln. Cendrawasih No. 1 Pajaresuk, Kec. Pringsewu, Kab. Pringsewu, Lampung </a>
+
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31779.22467928196!2d104.9286562348189!3d-5.355300477138978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e47321814f328fb%3A0x4f4c3b0cae0578c2!2sFajar%20Esuk%2C%20Kec.%20Pringsewu%2C%20Kabupaten%20Pringsewu%2C%20Lampung!5e0!3m2!1sid!2sid!4v1700993337743!5m2!1sid!2sid" 
+            width="90%" 
+            height="200" 
+            style="border: 2px;  border-style: double; border-color: white; border-radius: 5%;"
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="box">
-            <h3>Tambahan</h3>
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
+        <div class="box" id="kontak">
+            <h3>Kontak</h3>
+            <a href="#telp"><i class="fa-solid fa-phone"></i> 0823 7772 6943</a>
+            <a href="#email"><i class="fa-solid fa-at"></i> Kelurahanfajaresuk@gmail.com</a>
         </div>
 
         <div class="box">

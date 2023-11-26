@@ -29,7 +29,7 @@ window.onscroll = () =>{
 const Homeswiper = new Swiper(".home-slider", {
   loop:true, 
   keyboard: true,
-  grabCursor:true,
+  grabCursor: false,
   autoplay: {
    delay: 5000,
    },
@@ -54,13 +54,19 @@ window.addEventListener("scroll", () => {
 
 
 
-// --------------------------------------------------#TODO blogs slider------------------
-const blogsSwiper = new Swiper(".blogs-slider", {
-   loop: true, 
+// --------------------------------------------------#TODO destinasi slider------------------
+const destinasiSwiper = new Swiper(".destinasi-slider", {
+   loop: false, 
    grabCursor: true,
    longSwipes: true,
    spaceBetween: 10,
    keyboard: true,
+   pauseOnMouseEnter: true,
+   effect: 'coverflow',
+   coverflowEffect: {
+     rotate: 0,
+     slideShadows: true,
+   },
    freeMode: {
     enabled: true,
     sticky: true,
