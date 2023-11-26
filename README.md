@@ -5,4 +5,4 @@ https://1wikii.github.io/project-desa-pajaresuk/sample/
 
 
 ## CONTOH
-https://1wikii.github.io/Visit-Srilanka/
+https://visitsrilanka.live/
