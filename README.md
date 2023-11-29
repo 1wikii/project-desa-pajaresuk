@@ -3,6 +3,3 @@
 ## WEBSITE
 https://1wikii.github.io/project-desa-pajaresuk/
 
-
-## CONTOH
-https://visitsrilanka.live/
