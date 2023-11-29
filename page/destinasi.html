@@ -40,65 +40,52 @@
     <!-- custom css file link  -->
 	<link rel="stylesheet" href="../css/global.css">
 	<link rel="stylesheet" href="../css/style.css">
-	<link rel="stylesheet" href="../css/destinasi.css">
+	<link rel="stylesheet" href="../css/sub-page.css">
 
 </head>
 <body>
   <div id="top"></div>
-<!-- header section starts  -->
 
-<!-- <header class="header">
+  <header class="container-navbar">
 
-    <a href="#" class="logo"> <i class="fas fa-hiking"></i> travel. </a>
-
-    <nav class="navbar">
-        <div id="nav-close" class="fas fa-times"></div>
-        <a href="index.html">home</a>
-        <a href="adventure.html">Adventure</a>
-        <a href="map.html">map</a>
-        <a href="blogs.html">blogs</a>
-        <a href="events.html">Events</a>
-        <a href="products.html">Products</a>
-        <a href="about.html">about us</a>
-        
-    </nav>
-
-    <div class="icons">
-      <div id="menu-btn" class="fas fa-bars"></div>
-      <div id="search-btn" class="fas fa-search"></div>
-  </div>
-
-</header> -->
-
-
-<header class="container-navbar">
-
-	<nav class="sub-navbar">
-		<div class="link">
-			<a href="./kontak.html" id="email"> <i class="fa-solid fa-envelope"></i>  <i id="address"> Kelurahanfajaresuk@gmail.com</i> </a>
-			<span class="separator"><i class="fa-solid fa-grip-lines-vertical"></i></span> 
-			<a href="./kontak.html" id="phone"><i class="fa-solid fa-phone"></i> <i id="number">0823 7772 6943</i></a> <!-- #review  tambah link telp -->
-		</div>
-	</nav>
-
-	<nav class="navbar">
-		<a href="./index.html" class="logo"> 
-			<img class="logo-img" id="logo-img" src="../images/icon.png"></img>
-
-			<div class="logo-title">
-				<span>Pariwisata</span>
-				<span>Pajaresuk</span>
+		<nav class="sub-navbar">
+			<div class="link">
+				<a href="../index.html" id="email"> <i class="fa-solid fa-house"></i> <i id="beranda"> Beranda</i> </a>
+				<span class="separator"><i class="fa-solid fa-grip-lines-vertical"></i></span> 
+				<a href="#kontak" id="phone"><i class="fa-solid fa-phone"></i> <i id="number">Kontak</i></a> <!-- #review  tambah link telp -->
+				<span class="separator"><i class="fa-solid fa-grip-lines-vertical"></i></span> 
+				<a href="#lokasi" id="alamat"><i class="fa-solid fa-map-location-dot"></i> <i id="maps">Jln. Cendrawasih No. 1 Pajaresuk, Kec. Pringsewu, Kab. Pringsewu, Lampung</i> </a>
 			</div>
-		</a>
-		
-		<div class="link">
+		</nav>
+
+		<nav class="navbar">
+			<a href="../index.html" class="logo"> 
+				<img class="logo-img" id="logo-img" src="../images/icon.png"></img>
+
+				<div class="logo-title">
+               <span>Waliparis</span>
+				</div>
+			</a>
+			
+			<div class="link">
+				<a href="../index.html">Home</a>
+				<a href="./destinasi.html">Destinasi</a>
+				<a href="./kuliner.html">Kuliner</a>
+			</div>
+
+			<div class="dropdown">                <!-- #REVIEW  responsive button -->
+				<i class="fa-solid fa-bars" id="bar"></i>
+
+			</div>
+		</nav>
+
+		<nav class="dropdown-menu">             <!-- #REVIEW  responsive menu -->
 			<a href="../index.html">Home</a>
 			<a href="./destinasi.html">Destinasi</a>
 			<a href="./kuliner.html">Kuliner</a>
-			<a href="./kontak.html">Kontak</a>
-		</div>
-	</nav>
-</header>
+		</nav>
+
+	</header>
 <!-- header section ends -->
 
 
@@ -106,102 +93,115 @@
 <div class="banner-area"></div>
   
 
+
+
+
+
+
+
+
 <!-- ------------------start--------------------------------------------- -->
 
 <section class="light">
 	<div class="container py-2">
 		<div class="h1 text-center text-dark pb-4 " id="pageHeaderTitle">Destinasi Wisata</div>
 
-		<article class="postcard light blue" id="lotus">
-			<a class="postcard__img_link" href="#">
-				<img class="postcard__img" src="images/lotustower.jpg" alt="Image Title" loading="lazy"/>
+		<article class="postcard light blue" id="goa-maria">
+			<a class="postcard__img_link">
+				<img class="postcard__img" src="../images/destinasi/goa-maria.jpg" alt="Goa Maria" loading="lazy"/>
 			</a>
 			<div class="postcard__text t-dark" style="padding-right: 40px;">
-				<h1 class="postcard__title blue"><a href="#">Lotus Tower</a></h1>
+				<h1 class="postcard__title blue"><a>Goa Maria</a></h1>
 				<div class="postcard__subtitle small">
-					<time datetime="2022-12-25 12:00:00">
-						<i class="fas fa-calendar-alt mr-2"></i>Sun, December 25th 2022
-					</time>
+					<div>
+						<i class="fa-solid fa-sign-hanging" id="pertanian"></i> Pertanian
+					</div>
 				</div>
 				<div class="postcard__bar"></div>
-				<div class="postcard__preview-txt">Lotus Tower also referred to as Colombo Lotus Tower, is a 350 m (1,150 ft) tall tower, located in Colombo, Sri Lanka.It has been called a symbolic landmark of Sri Lanka.As of 2019, the tower is the tallest self-supported structure in South Asia; the second tallest structure in South Asia after the guy-wire-supported INS Kattabomman in India; the 11th tallest tower in Asia and the 19th tallest tower in the world.The lotus-shaped tower is used for communication, observation and other leisure facilities.</div>
+				<div class="postcard__preview-txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, a. Consectetur quam nostrum ducimus exercitationem.</div>
 				<ul class="postcard__tagbox">
-					<li class="tag__item"><i class="fa fa-compass" aria-hidden="true"></i>  Direction</li>
+					<li class="tag__item"><i class="fa-solid fa-route" aria-hidden="true"></i> Lokasi </li>
 					</li>
 				</ul>
 			</div>
 		</article>
 
 
-		<article class="postcard light red" id="museum">
-			<a class="postcard__img_link" href="#">
-				<img class="postcard__img" src="images/musium.jpg" alt="Image Title" />	
+		<article class="postcard light red" id="la-verna">
+			<a class="postcard__img_link">
+				<img class="postcard__img" src="../images/destinasi/la-verna.jpg" alt="La Verna" />	
 			</a>
 			<div class="postcard__text t-dark" style="padding-left: 45px;">
-				<h1 class="postcard__title red"><a href="#">Colombo National Museum</a></h1>
+				<h1 class="postcard__title red"><a>La Verna</a></h1>
 				<div class="postcard__subtitle small">
 					<time datetime="2020-05-25 12:00:00">
-						<i class="fas fa-calendar-alt mr-2"></i>Sun, May 25th 2022
+						<i class="fas fa-calendar-alt mr-2" id="pertanian"></i> Pertanian
 					</time>
 				</div>
 				<div class="postcard__bar"></div>
-				<div class="postcard__preview-txt">The Colombo Museum as it was called at the beginning was established on 1st January 1877. It founder was Sir William Henry Gregory, the British Governor of Ceylon (Sri Lanka) at the time. <br>
-
-          The Royal Asiatic Society (CB) was instrumental in bringing to the notice of Gregory on his appointment as Governor in 1872 the need for a public museum with much difficulty the approval of the legislative council was obtained within a year. The Architect of the Public Works Department, J.G. Smither was able to prepare the plans for new structure on Italian architectural style. The construction was completed in 1876 and the Museum commenced it functions in the following year. <br>
-          <br>
-          The Authorities of the museum took various steps to display the cultural and natural heritage of the country for this purpose.
-         </div>
+				<div class="postcard__preview-txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, a. Consectetur quam nostrum ducimus exercitationem.</div>
 				<ul class="postcard__tagbox">
-					<li class="tag__item"><i class="fa fa-compass" aria-hidden="true"></i>  Direction</li>
+					<li class="tag__item"><i class="fa-solid fa-route" aria-hidden="true"></i> Lokasi </li>
 				</ul>
 			</div>
 		</article>
 
 
-		<article class="postcard light green" id="gangarama">
-			<a class="postcard__img_link" href="#">
-				<img class="postcard__img" src="images/gangarama.jpg" alt="Image Title" />
+		<article class="postcard light green" id="talang">
+			<a class="postcard__img_link">
+				<img class="postcard__img" src="../images/destinasi/talang.jpg" alt="Image Title" />
 			</a>
 			<div class="postcard__text t-dark" style="padding-right: 40px;">
-				<h1 class="postcard__title green"><a href="#">Gangaramaya Temple</a></h1>
+				<h1 class="postcard__title green"><a>Talang</a></h1>
 				<div class="postcard__subtitle small">
 					<time datetime="2020-05-25 12:00:00">
-						<i class="fas fa-calendar-alt mr-2"></i>Sun, December 25th 2022
+						<i class="fas fa-calendar-alt mr-2" id="pertanian"></i> Pertanian
 					</time>
 				</div>
 				<div class="postcard__bar"></div>
-				<div class="postcard__preview-txt">Gangaramaya Temple is one of the most well-known Buddhist temples in Colombo. It's exceptionally beautiful with the Beira Lake on one side and statues & carvings paving the way inside. The main sanctuary has a huge Buddha statue. <br>
-          The temple's architecture demonstrates an eclectic mix of Sri Lankan, Thai, Indian, and Chinese architecture.
-
-          This Buddhist temple includes several imposing buildings and is situated not far from the placid waters of Beira Lake on a plot of land that was originally a small hermitage on a piece of marshy land. It has the main features of a Vihara (temple), the Cetiya (Pagada) the Bodhitree, the Vihara Mandiraya, the Seema malaka (assembly hall for monks) and the Relic Chamber. In addition, a museum, a library, a residential hall, a three storeyed Pirivena, educational halls and an alms hall are also on the premises.
-          
-          Most notable for tourists is the architecture of Seema Malaka, which was built with donations from a Muslim sponsor to the design of Geoffrey Bawa.</div>
+				<div class="postcard__preview-txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, a. Consectetur quam nostrum ducimus exercitationem.</div>
 				<ul class="postcard__tagbox">
-					<li class="tag__item"><i class="fa fa-compass" aria-hidden="true"></i>  Direction</li>
+					<li class="tag__item"><i class="fa-solid fa-route" aria-hidden="true"></i> Lokasi </li>
 				</ul>
 			</div>
 		</article>
 
 
-		<article class="postcard light yellow" id="square">
-			<a class="postcard__img_link" href="#">
-				<img class="postcard__img" src="images/independance.webp" alt="Image Title" />
+		<article class="postcard light yellow" id="tanggul">
+			<a class="postcard__img_link">
+				<img class="postcard__img" src="../images/destinasi/tanggul.jpg" alt="Image Title" />
 			</a>
 			<div class="postcard__text t-dark" style="padding-left: 50px;">
-				<h1 class="postcard__title yellow"><a href="#">Independence Square</a></h1>
+				<h1 class="postcard__title yellow"><a>Tanggul</a></h1>
 				<div class="postcard__subtitle small">
 					<time datetime="2020-05-25 12:00:00">
-						<i class="fas fa-calendar-alt mr-2"></i>Sun, December 25th 2022
+						<i class="fas fa-calendar-alt mr-2" id="pertanian"></i> Pertanian
 					</time>
 				</div>
 				<div class="postcard__bar"></div>
-				<div class="postcard__preview-txt">Independence Memorial Hall (also known as Independence Commemoration Hall) is a national monument in Sri Lanka built for commemoration of the independence of Sri Lanka from the British rule with the restoration of full governing responsibility[2] to a Ceylonese-elected legislature on 4 February 1948. It is located in Independence Square (formerly Torrington Square) in the Cinnamon Gardens, Colombo. It also houses the Independence Memorial Museum. <br>
-
-          The monument was built at the location where the formal ceremony marking the start of self-rule, with the opening of the first parliament by Prince Henry, Duke of Gloucester occurred at a special podium on 4 February 1948. <br>
-          
-          Located at the head of the monument is the statue of the first prime minister of the country Rt. Hon. Don Stephen Senanayake "The Father of the Nation". Most of the annual National Independence Day celebrations have been held here.</div>
+				<div class="postcard__preview-txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, a. Consectetur quam nostrum ducimus exercitationem.</div>
 				<ul class="postcard__tagbox">
-					<li class="tag__item"><i class="fa fa-compass" aria-hidden="true"></i>  Direction</li>
+					<li class="tag__item"><i class="fa-solid fa-route" aria-hidden="true"></i> Lokasi </li>
+				</ul>
+			</div>
+		</article>
+
+
+		<article class="postcard light blue" id="kuda-lumping">
+			<a class="postcard__img_link">
+				<img class="postcard__img" src="../images/destinasi/kuda-lumping.jpeg" alt="Image Title" />
+			</a>
+			<div class="postcard__text t-dark" style="padding-left: 50px;">
+				<h1 class="postcard__title blue"><a>Kuda Lumping</a></h1>
+				<div class="postcard__subtitle small">
+					<time datetime="2020-05-25 12:00:00">
+						<i class="fas fa-calendar-alt mr-2" id="kesenian"></i> Kesenian
+					</time>
+				</div>
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, a. Consectetur quam nostrum ducimus exercitationem.</div>
+				<ul class="postcard__tagbox">
+					<li class="tag__item"><i class="fa-solid fa-route" aria-hidden="true"></i> Lokasi </li>
 				</ul>
 			</div>
 		</article>
@@ -209,6 +209,64 @@
 
 	</div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="footer">
+
+	<div class="box-container">
+
+		 <div class="box" id="lokasi">
+			  <h3>Lokasi</h3>
+			  <a href="https://maps.app.goo.gl/1Uz4CkV7PQtmrWKR8" 
+			  target="_blank" 
+			  style="font-style: italic;"> <i class="fa-solid fa-location-dot"></i> 
+			  Jln. Cendrawasih No. 1 Pajaresuk, Kec. Pringsewu, Kab. Pringsewu, Lampung </a>
+
+
+			  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31779.22467928196!2d104.9286562348189!3d-5.355300477138978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e47321814f328fb%3A0x4f4c3b0cae0578c2!2sFajar%20Esuk%2C%20Kec.%20Pringsewu%2C%20Kabupaten%20Pringsewu%2C%20Lampung!5e0!3m2!1sid!2sid!4v1700993337743!5m2!1sid!2sid" 
+			  width="90%" 
+			  height="200" 
+			  style="border: 2px;  border-style: double; border-color: white; border-radius: 5%;"
+			  allowfullscreen="" 
+			  loading="lazy" 
+			  referrerpolicy="no-referrer-when-downgrade"></iframe>
+		 </div>
+
+		 <div class="box" id="kontak">
+			  <h3>Kontak</h3>
+			  <a href="#telp"><i class="fa-solid fa-phone"></i> 0823 7772 6943</a>
+			  <a href="#email"><i class="fa-solid fa-at"></i> Kelurahanfajaresuk@gmail.com</a>
+		 </div>
+
+		 <div class="box">
+			  <h3>Media Sosial</h3>
+			  <a href="#fb" target="_blank"> <i class="fa-brands fa-whatsapp"></i> whatsapp</a>
+			  <a href="#fb" target="_blank"> <i class="fab fa-facebook-f"></i> facebook </a>
+			  <a href="#x" target="_blank"> <i class="fab fa-twitter"></i> twitter </a>
+			  <a href="#ig" target="_blank"> <i class="fab fa-instagram"></i> instagram </a>
+	</div>
+
+	</div>
+
+	<div class="credit"> Copyright ©️ 2023 - <span>Kelurahan Pajaresuk</span></div>
+
+</section>
+
+
+
+
+
+
+
 
 
 
