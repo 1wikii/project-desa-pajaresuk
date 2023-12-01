@@ -1,3 +1,23 @@
+
+
+// --------------------------------------------------#TODO link kuliner------------------
+// let cardMieTeluk = document.querySelector("wrapper.mie-teluk");
+// let cardRafins = document.querySelector("wrapper.rafins");
+
+function goMieTeluk(){
+  window.open('./page/kuliner.html#mie-teluk');
+
+}
+
+function goRafins(){
+  window.open('./page/kuliner.html#rafins');
+
+}
+
+
+
+
+// --------------------------------------------------#TODO active navbar------------------
 let subNavbar = document.querySelector(".sub-navbar");
 let navbar = document.querySelector(".navbar");
 let logo = document.getElementById("logo-img");
@@ -23,6 +43,13 @@ window.onscroll = () =>{
       logo.style.opacity = 0.5;
   }
 }; 
+
+
+
+
+
+
+
 
 
 // ----------------------------#TODO home slider---------------------------------------
