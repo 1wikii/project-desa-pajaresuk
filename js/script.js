@@ -93,3 +93,20 @@ const destinasiSwiper = new Swiper(".destinasi-slider", {
        },
    },
 });
+
+
+// --------------------------------------------------#TODO responsice navbar------------------
+let dropdown = document.querySelector(".dropdown");
+let dropdownSubPage = document.querySelector(".dropdown-res");
+let dropdownMenu = document.querySelector(".container-navbar .dropdown.menu");
+let dropdownMenuDisplay = window.getComputedStyle(dropdownMenu);
+
+
+dropdown.onclick = () => {
+  if(dropdownMenuDisplay.display === 'none'){ 
+    dropdownMenu.style.display = 'inline-flex';
+  }
+  else{
+    dropdownMenu.style.display = 'none';
+  }
+}

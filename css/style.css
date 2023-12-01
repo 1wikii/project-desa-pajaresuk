@@ -8,6 +8,7 @@
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     outline: none;
@@ -135,18 +136,26 @@
    color: var(--color-black-text);
 }
 
+.sub-navbar #alamat-2{     /*------#REVIEW  subnav responsive */
+  display: none;
+}
+
+
 .sub-navbar #alamat #maps,
+.sub-navbar #alamat-2 #maps,
 .sub-navbar #email #beranda,
 .sub-navbar #phone #number{
   margin-left: 6px;
   font-weight: bold;
 }
-.sub-navbar #alamat #maps{
+.sub-navbar #alamat #maps,
+.sub-navbar #alamat-2 #maps{
   font-weight: 500;
   font-size: 0.8rem;
 }
 
 .sub-navbar #alamat #maps:hover,
+.sub-navbar #alamat-2 #maps:hover,
 .sub-navbar #email #beranda:hover,
 .sub-navbar #phone #number:hover{
    color: rgba(0, 0, 0, 0.438);
@@ -215,39 +224,43 @@
    color: var(--color-black-text);
 }
 
-.navbar .dropdown #bar {   /* #REVIEW  Responsive bar  */
+.navbar .dropdown #bar,
+.navbar .dropdown-res #bar {   /* #REVIEW  Responsive bar  */
   font-size: 2.5rem;
   cursor: pointer;
 
   display: none;          /* #REVIEW  hide the bar  */
 }
 
-.container-navbar .dropdown-menu{
+.container-navbar .dropdown.menu{
   z-index: 1;
   padding: 1rem 4rem;
   position: absolute;
   right: 8%;
+  top: none;
   border-radius: 20px 0 20px 20px;
 
   display: flex;
   flex-direction: column;
 
-  background-color: var(--color-white-navbar-trans);
+  background-color: var(--color-green-main);
   backdrop-filter: blur(8px);
   overflow: hidden;
+  cursor: pointer;
 
   display: none;       /* #REVIEW  hide the dropdown menu */
 }
 
-.container-navbar .dropdown-menu a{
+.container-navbar .dropdown.menu a{
   padding: .5rem 0;
   font-size: 1.1em;
-  color: var(--color-black-text);
+  color: var(--color-white-text);
 }
 
 
 .navbar .link a:hover,
-.navbar .dropdown #bar:hover{
+.navbar .dropdown #bar:hover,
+.navbar .dropdown-res #bar:hover{
   color: var(--color-green-main);
 }
 /* -------------------HEADER NAVBAR End */
@@ -391,27 +404,9 @@
 
 
 
- .event {
-  background: white;
-  font-family: "Open Sans", sans-serif;
-  padding-bottom: 50px;
-}
 
- .heading1 {
-  text-align: center;
-  font-weight: 500; 
-  font-size: 40px;
-  padding-top: 20px;
 
-}
 
- 
- .eventrow {
-   max-width: 1920px;
-   margin: 50px 0 0 0;
-   display: flex;
-   flex-wrap: wrap;
- }
  
 
  .title {
@@ -425,7 +420,8 @@
  .card {
    float: left;
    padding: 0 1.7rem 5.7rem 1.7rem;
-   width: 25%;
+   width: 35%;
+
  }
  .card .menu-content {
    margin: 0;
@@ -455,6 +451,7 @@
    transform: translate(-50%, 0);
  }
  .card .wrapper {
+   min-width: 300px;
    background-color: var(--color-white-bg);
    min-height: 480px;
    position: relative;
@@ -498,6 +495,39 @@
  
  
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .event {
+  background: white;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 50px;
+}
+
+ .heading1 {
+  text-align: center;
+  font-weight: 500; 
+  font-size: 40px;
+  padding-top: 20px;
+
+}
+
+ .eventrow {
+   max-width: 1920px;
+   margin: 50px 0 0 0;
+   display: flex;
+   flex-wrap: wrap;
+ }
  
  
  .example-2 .wrapper:hover .menu-content span {
@@ -587,12 +617,18 @@
 }
 
 .footer .box-container {
+  overflow: hidden;
+  white-space: nowrap;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 1.5rem;
   
+}
+
+.footer .box-container .box{
+  overflow: hidden;
 }
 
 .footer .box-container .box h3 {
@@ -698,6 +734,27 @@
 }
 
 
+
+/* --------------------------Slider */
+@media screen and (max-width: 800px){
+  .home .box.second {
+    min-height: 120vh;
+  }
+
+  .sub-navbar #alamat {
+    display: none;
+  }
+
+  .sub-navbar #alamat-2,
+  .sub-navbar #alamat-2 #maps{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+}
+
+
 @media screen and (max-width: 600px) {
   .card {
     width: 400px;
@@ -706,4 +763,44 @@
   .card .data .Econtent {
   transform: translateY(19px);
   }
+}
+
+
+@media screen and (max-width: 600px){
+
+  .navbar .link{
+    display: none;
+  }
+
+  .navbar .dropdown #bar,
+  .navbar .dropdown-res #bar{
+    display: inline-flex;
+  }
+
+  .home .box.second .content span{
+    font-size: 1.5rem;
+  }
+
+  .home .box.second .content h3{
+    font-size: 3rem;
+  }
+
+  .home .box.second .content p{
+    font-size: .92rem;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .home .box.second {
+    min-height: 140vh;
+  }
+
+  .sub-navbar #separator-2 {
+    display: none;
+  }
+
+  .sub-navbar #alamat-2{
+    display: none;
+  }
+
 }
