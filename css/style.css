@@ -291,8 +291,7 @@
 
    background-size: cover !important;
    background-position: center !important;
-
-
+   background-repeat: no-repeat !important;
  }
 
  .home .box .content {
@@ -700,7 +699,13 @@
  }
 
 
- @media (max-width: 991px) {
+
+
+
+
+
+
+@media (max-width: 991px) {
    html {
      font-size: 90%;
      scroll-padding-top: 7rem;
@@ -724,6 +729,14 @@
    }
  }
 
+
+
+
+
+
+
+
+
  @media screen and (max-width: 992px) {
   .card {
     width: 400px;
@@ -733,6 +746,10 @@
     transform: translateY(20px);
     }
 }
+
+
+
+
 
 
 
@@ -756,6 +773,11 @@
 }
 
 
+
+
+
+
+
 @media screen and (max-width: 600px) {
   .card {
     width: 400px;
@@ -765,6 +787,10 @@
   transform: translateY(19px);
   }
 }
+
+
+
+
 
 
 @media screen and (max-width: 600px){
@@ -791,9 +817,17 @@
   }
 }
 
+
+
+
+
 @media screen and (max-width: 500px){
   .home .box.second {
-    min-height: 140vh;
+    min-height: 100vh;
+
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
   }
 
   .sub-navbar #separator-2 {
@@ -802,6 +836,10 @@
 
   .sub-navbar #alamat-2{
     display: none;
+  }
+
+  .home .box.second .content p {
+    line-height: 1.5;
   }
 
 }

@@ -1,17 +1,14 @@
 
 
 // --------------------------------------------------#TODO link kuliner------------------
-// let cardMieTeluk = document.querySelector("wrapper.mie-teluk");
-// let cardRafins = document.querySelector("wrapper.rafins");
 
 function goMieTeluk(){
-  window.open('./page/kuliner.html#mie-teluk');
+  window.location.href = './page/kuliner.html#mie-teluk';
 
 }
 
 function goRafins(){
-  window.open('./page/kuliner.html#rafins');
-
+  window.location.href = './page/kuliner.html#rafins';
 }
 
 
@@ -83,7 +80,7 @@ window.addEventListener("scroll", () => {
 
 // --------------------------------------------------#TODO destinasi slider------------------
 const destinasiSwiper = new Swiper(".destinasi-slider", {
-   loop: false, 
+   loop: true, 
    grabCursor: true,
    longSwipes: true,
    spaceBetween: 10,
