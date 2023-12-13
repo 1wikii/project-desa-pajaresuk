@@ -1,5 +1,5 @@
 ## Informasi
-> Dosen Pengampu  : Ir. Mugi Praseptiawan, S.T., S.Kom. <br />
+> Dosen Pengampu  &#8594 Ir. Mugi Praseptiawan, S.T., S.Kom. <br />
 > Kelas           : RB <br />
 > Mata Kuliah     : Kapita Selekta Informatika <br />
 > Mitra           : Kelurahan Pajaresuk <br />
