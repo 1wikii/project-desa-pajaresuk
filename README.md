@@ -1,9 +1,9 @@
 ## Informasi
-> Dosen Pengampu  : Ir. Mugi Praseptiawan, S.T., S.Kom.
-> Kelas           : RB
-> Mata Kuliah     : Kapita Selekta Informatika
-> Mitra           : Kelurahan Pajaresuk
-> Tujuan          : Untuk memenuhi tugas besar sebagai Ujian Akhir Semester (UAS)
+> Dosen Pengampu  : Ir. Mugi Praseptiawan, S.T., S.Kom. <br>
+> Kelas           : RB <br>
+> Mata Kuliah     : Kapita Selekta Informatika <br>
+> Mitra           : Kelurahan Pajaresuk <br>
+> Tujuan          : Untuk memenuhi tugas besar sebagai Ujian Akhir Semester (UAS) <br>
 
 
 ## Anggota Kelompok
